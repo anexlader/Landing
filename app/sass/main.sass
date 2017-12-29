@@ -1,0 +1,881 @@
+@import 'app.sass'
+span,a,h1,h2,h3,h4,
+	color: #26272d
+h1,h2
+	font-family: VarelaRound-Regular
+h3,h4
+	font-family: Lato-Light
+a,p,button
+	font-family: Lato-Regular
+h1, p 
+	text-align: center
+h1, .h1 // 36px
+	font-size: 62px
+h2, .h2 // 24px
+	font-size: 42px
+h3, .h3 // 21px
+	font-size: 32px
+h4, .h4 // 18px
+	font-size: 26px
+h5, .h5 // 16px
+	font-size: 12px
+	font-family: Lato-Bold
+h6, .h6 // 14px
+a,button
+	font-size: 16px
+a:hover
+	text-decoration: none
+p , a 
+	font-size: 19px
+	text-align: left
+	color: #8c8f94
+	margin-bottom: 50px
+span
+	font-size: 16px
+	font-family: Lato-Regular
+	display: block
+img
+ul
+	margin: 0
+	padding: 0
+li
+	list-style: none
+	display: block
+section
+	padding: 120px 0
+.circle
+	width: 130px
+	height: 130px
+	border-radius: 50%
+	border: none
+	overflow: hidden
+	margin: 0 65px
+button
+	height: 42px
+	border-radius: 50px
+	border: none
+	text-align: center
+	display: inline-block
+	cursor: pointer
+	text-decoration: none
+.btn:hover , button:hover
+	text-decoration: none
+.btn:focus , button:focus
+	outline: 0
+.btn:active , button:active
+	height: 38px
+	font-size: 15px
+	color: #ebecef
+.i-buttton-1 , .btn-plan
+	background-color: #267df4
+	color: #ffff
+.i-buttton-1:hover , .btn-plan:hover
+	background-color: #299fff
+	color: #fff999
+.i-buttton-1:active , .btn-plan:active
+	width: 206px
+	color: #ff9988
+.container-fluid
+	overflow: hidden
+.apstr-img
+	width: 210px
+	height: 60px
+.map-img
+	width: 843px
+	height: 496px
+.iphone-feature
+	height: 765px
+	width: 810px
+.ph-scr
+	height: 568px
+	width: 320px
+.lock
+	background-image: url("../img/Shape1.png")
+.clock
+	background-image: url("../img/Shape2.png")
+.center
+	background-image: url("../img/iphone screen/iphone-maket.png")
+.pos-rel
+	position: relative
+.pos-abs
+	position: absolute
+.ready-form , .Subscribe-form
+	border-radius: 50px
+	padding: 7px
+	border: 1px solid #ebecef
+	input
+		border: none
+	input:focus
+		border: none
+		box-shadow: none
+	.btn
+		width: 165px
+		height: 42px
+		border-radius: 21px
+		background-color: #6fc754
+		color: #ffffff
+	.btn, .btn:focus, .btn:active
+		box-shadow: none
+		border: none
+	.btn:hover
+		background-color: #1ee111
+	.btn:active
+		background-color: #1ee111
+		color: #ebecef
+		font-size: 14px
+	i
+		padding-left: 20px
+.foot-cont:after , .foot-copyright:before
+		content: " "
+		position: absolute
+		width: 100%
+		height: 1px
+		left: 0
+		right: 0
+		background-color: #f4f4f4
+.foot-copyright , .Plan
+	span 
+		color: #8c8f94
+		a 
+			color: blue
+			text-decoration: underline
+
+.fa-chevron-left,
+.fa-chevron-left
+	padding: 10px
+.ov-hidden
+	overflow: hidden
+
+/////////////////////////////////////
+
+@media (min-width: 576px) // col-sm
+	.container
+		max-width: 540px
+	header
+	.Features
+	.iphoneFtr
+		padding-top: 50px
+		h2,p,button
+			text-align: center
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+	
+	.Subscribe
+	footer
+
+	
+	
+@media (min-width: 768px) // col-md
+	.container
+		max-width: 720px
+	header
+	.Features
+	.iphoneFtr
+		
+		h2,p,button
+			text-align: left
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+
+	.Plan
+	.Subscribe
+	footer
+
+@media (max-width: 768px) // col-md
+	.container
+		max-width: 720px
+	.Subscribe .Subscribe-form
+		max-width: 90%
+		input
+			max-width: 55%
+	header
+		.header-menu
+			#navbarNav
+				ul.menu-1.navbar-nav > li > a
+					.menu-1 li,.menu-2 li
+						margin-bottom: 0px !important
+						margin-right: 30px
+
+					.menu-2 .active>a
+						color: #b5b5b6
+					.menu-2 
+						ul 
+							width: 100%
+						.h-btn
+							margin-right: 0
+							.header-btn
+								padding: 0 0 4px
+								margin: 0
+								color: #ffffff
+								width: 135px
+								background-color: #267df4
+								color: #ffff
+								i 
+									margin-right: 20px
+							.header-btn:hover
+								background-color: #299fff
+								color: #fff999
+							.header-btn:active
+								width: 131px
+								margin: 2px 0 2px 4px
+								color: #ff9988
+		.navbar-toggler
+			margin-top: -50px	
+
+	.Customers
+		#radio1:checked ~ .wr-txt
+			transform: translate(30%, 0) !important
+		#radio2:checked ~ .wr-txt
+			transform: translate(-4%, 0) !important
+		#radio3:checked ~ .wr-txt
+			transform: translate(-37%, 0) !important
+
+			
+
+
+@media (min-width: 992px) // col-lg
+	.container
+		max-width: 960px
+	header
+	.Features
+	.iphoneFtr
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+	.Plan
+	.Subscribe
+	footer
+
+
+@media (max-width: 992px) // col-lg
+	.container
+		max-width: 960px
+	.Features
+	.iphoneFtr
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+	.Plan
+		padding: 110px 0 140px 0 !important
+		h2 
+			margin: 0px auto 34px  !important
+			font-size: 32px
+			text-align: center
+		span
+			text-align: center
+		.toggle-demo
+			margin: 31px auto 0px
+			justify-content: center
+			span
+				margin-bottom: -20px
+				span
+					margin: 0px
+		p 
+			text-align: center
+			margin-bottom: 10px
+		span
+			margin: 20px auto 50px
+			a 
+		.left-board .btn-plan
+			margin-top: 38px !important
+
+		#left-board, #right-board
+			height: 420px
+			width: 50%
+		#left-board.active,	#right-board.active
+			height: 460px
+			padding: 70px 0 30px !important
+		.left-board, .right-board
+			padding: 50px 0 20px !important
+			h3
+				padding-bottom: 15px !important
+			span
+				margin: 10px auto 20px !important
+			p 
+				margin-bottom: 15px !important
+				font-size: 16px
+			li 
+				margin-bottom: -15px
+				font-size: 14px
+			.btn-plan
+				max-width: 90% !important
+				margin-top: 30px !important
+	.Subscribe
+	footer		
+
+@media (min-width: 1200px) // col-xl
+	.container
+		max-width: 1140px
+	header
+	.Features
+	.iphoneFtr
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+	.Plan
+	.Subscribe
+	footer
+		
+
+/////////////////////////////////////
+
+
+header
+	background-color: #f4f4f5
+	background-image: url("../img/bg-baner.jpg")
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	overflow: hidden
+	padding-bottom: 510px
+	.header-menu
+		margin-top: 15px
+		padding: 0
+		.head-ul-row 
+			.logo-header
+				margin: 0
+				padding-bottom: 52px
+			.head-ul-row
+				.menu-1 , .menu-2
+					// margin: 2% 0
+					li
+						padding-top: 68px
+						a
+							
+				.menu-1 li,.menu-2 li
+					margin-right: 30px
+
+				.menu-2 .active>a
+					color: #b5b5b6
+				.menu-2 
+					ul 
+						width: 100%
+					.h-btn
+						margin-right: 0
+						.header-btn
+							padding: 0 0 4px
+							margin: 0
+							color: #ffffff
+							width: 135px
+							background-color: #267df4
+							color: #ffff
+							i 
+								margin-right: 20px
+						.header-btn:hover
+							background-color: #299fff
+							color: #fff999
+						.header-btn:active
+							width: 131px
+							margin: 2px 0 2px 4px
+							color: #ff9988
+
+
+	.h-text
+		padding-top: 90px
+		h1
+			margin-bottom: 30px
+		margin: 0 auto
+	.button
+		margin-top: 7px
+		margin-bottom: 32px
+		width: 205px
+		height: 50px
+		background: transparent
+		color: #26272d
+		border: 1px solid #ebecef
+		margin-left: 7px
+		.fa-play
+			margin-right: 15px
+	.buttton:active
+		width: 201px
+		height: 46px
+
+	.h-phone
+		width: 100%
+		position: absolute
+		top: 53%
+		// left: 36%
+		// right: 36%
+	#content
+	  height: 1000px
+
+
+.Features
+	.wrapper-ftr
+		padding: 0 40px
+		.ftr-icon
+			width: 42px
+			height: 52px
+			background-repeat: no-repeat
+			margin-bottom: 32px
+
+
+.iphoneFtr
+	overflow: hidden
+	.phone-left
+		margin-left: -235px
+	.iphone-text
+		margin-top: 130px
+		h2
+			margin-bottom: 60px
+		p 
+			font-size: 18px
+	.i-buttton-ftr
+		.i-buttton-1
+			width: 200px
+			padding-left: 25px
+			margin-right: 7px
+			i  
+			 padding-left: 50px
+		.i-buttton-1:active
+			width: 196px
+			margin-right: 11px
+		.i-buttton-2
+			width: 140px
+			background-color: #ffffff
+			color: #26272d
+			border: 1px solid #ebecef
+			margin-left: 7px
+		.i-buttton-2:hover
+			background-color: #effe
+			color: #999999
+		.i-buttton-2:active
+			width: 136px
+			color: #939393
+
+		
+.MapFtr
+	overflow: hidden
+
+	h2
+		margin-bottom: 50px
+	p 
+		margin-bottom: 25px
+		// font-stretch: condensed
+	.partners
+		h5
+			margin-top: 60px
+		.logo
+			height: 35px
+			width: 135px
+			margin-top: 35px
+			margin-right: 25px
+	.map-img
+		// width: 100%
+		height: 500px
+		margin-left: 50px
+
+
+.iPhoneScr
+	background-color: #f5f5f8
+	overflow: hidden
+	// background-color: #a2c5f6
+	.befone
+		h2
+			padding-bottom: 70px
+		h5 
+			padding-bottom: 120px
+	.befone:before
+		content: " "
+		position: absolute
+		top: 83px
+		right: 48%
+		width: 50px
+		height: 2px
+		padding: 0 auto
+		background-color: #267df4
+
+	.bg-phone-board
+		position: absolute
+		height: 578px
+		width: 320px
+		background-color: #f4f4f5
+		top:  385px
+		left: 516px
+
+	.phone-scr
+		height: 755px
+		.slider-row-img
+			.ph-scr
+				padding: 0 10px
+				margin: 0 auto
+				height: 577px
+				width: 345px
+
+				// box-shadow: 0px 30px 50px 0px rgba(92, 95, 101, 0.2)
+		.slider-row-img:focus
+			outline: none
+	
+	.pos-abs
+		width: 100%
+		height: 100%
+		bottom: -305px
+		right: -1px
+		pointer-events: none
+		.phone-scr-board
+			width: 370px
+			height: 755px
+			background-repeat: no-repeat
+			z-index: 9999999
+			// top: 205px
+			// right: 488px
+	
+
+.Ready
+	padding-top: 0
+	background-color: #f5f5f8
+	.ready-head
+		p
+			font-weight: bold
+			span
+				color: #8c8f94
+				font-size: 19px
+				font-weight: normal
+		h2
+	.ready-form
+		margin: 45px auto 65px
+		width: 500px
+		max-width: 100%
+		input
+			width: 318px
+			background-color: #f5f5f8
+	.readu-foot
+		h5 
+			margin-bottom: 20px
+			color: #f4f4f4
+		a>img
+			margin-bottom: 10px
+			width: 210px
+			height: 60px
+			border-radius: 30px
+
+
+.Customers
+	padding-top: 135px
+	.wr-slides
+		width: 100%
+		label
+			padding: 0
+			position: relative
+			display: inline-block
+			height: 150px	
+			img
+				width: 90px
+				height: 90px
+				overflow: hidden
+				border-radius: 50%
+				margin: 0 auto
+				filter: grayscale(100%)
+				transform: translate(0px, 22%)
+				transition: .5s
+	
+	#radio1:checked ~ .wr-txt .tab1,
+	#radio2:checked ~ .wr-txt .tab2,
+	#radio3:checked ~ .wr-txt .tab3
+		display: block
+		transform: translate(0px, 0%)
+	#radio1:checked ~ .wr-slides label:nth-child(1) img,
+	#radio2:checked ~ .wr-slides label:nth-child(2) img,
+	#radio3:checked ~ .wr-slides label:nth-child(3) img
+		width: 130px
+		height: 130px
+		filter: grayscale(0%)
+		transform: translate(0px, 0%)
+
+
+	#radio1:checked ~ .left-arrow
+		label:nth-child(1),
+		label:nth-child(2)
+			display: none
+	#radio2:checked ~ .left-arrow
+		label:nth-child(2),
+		label:nth-child(3)
+			display: none
+	#radio3:checked ~ .left-arrow
+		label:nth-child(3),
+		label:nth-child(1)
+			display: none
+
+
+	#radio1:checked ~ .right-arrow
+		label
+			display: none
+		label:nth-child(2),
+			display: block
+	#radio2:checked ~ .right-arrow
+		label
+			display: none
+		label:nth-child(3),
+			display: block
+	#radio3:checked ~ .right-arrow
+		label
+			display: none
+		label:nth-child(1),
+			display: block
+
+	.left-arrow
+		position: absolute
+		left: -20%
+		top: 50px
+		z-index: 99999
+
+	.right-arrow
+		position: absolute
+		right: -20%
+		top: 50px
+		z-index: 99999
+
+	input
+		display: none
+	.tab1, .tab2, .tab3
+		display: none
+		transition: .5s
+	.wr-txt
+		transition: .5s
+		margin: 0 -1000px
+		.sl--h3
+			margin: 43px 0 40px
+			text-align: center
+		.sl--p
+			margin-bottom: 45px
+			justify-content: center
+		.star-rating
+			text-align: center
+			margin-bottom: 57px
+			color: #f2bc3b
+		h5
+			text-align: center
+			margin: 0 auto 2px
+			font-size: 12px
+
+	#radio1:checked ~ .wr-txt
+		transform: translate(33%, 0)
+	#radio2:checked ~ .wr-txt
+		transform: translate(0%, 0)
+	#radio3:checked ~ .wr-txt
+		transform: translate(-35%, 0)
+/////////////////////////////////////////////////////////////////////////////////////
+
+.Plan
+	background-color: #f4f4f4
+	padding: 160px 0 190px
+	h2
+		margin: 40px 0 63px
+	p 
+		margin-bottom: 30px
+	span
+		a 
+	.span-color
+		color: #222
+		margin-bottom: 15px
+	.toggle-demo
+		margin-bottom: 60px
+		// ----this---is---my---button---switch----
+		@media only screen
+			.switch-light
+				position: relative
+				display: block
+				*
+					box-sizing: border-box
+					&:before, &:after
+						box-sizing: border-box
+				a
+					display: block
+					transition: all 0.3s ease-out
+				label, > span
+					line-height: 2em
+				input:focus
+					~ span a, + label
+						outline: none
+		@media only screen and (-webkit-min-device-pixel-ratio: 0)
+			.switch-light input:focus
+				~ span a, + label
+					outline: none
+		@media only screen
+			.switch-light
+				input
+					position: absolute
+					opacity: 0
+					z-index: 3
+					&:checked ~ span a
+						right: 0%
+				> span
+					position: relative
+					overflow: hidden
+					display: block
+					min-height: 2em
+					padding: 0
+					text-align: left
+				span span
+					position: relative
+					z-index: 2
+					display: block
+					top: 6px
+					float: left
+					width: 50%
+					text-align: center
+					user-select: none
+				a
+					position: absolute
+					right: 49%
+					top: 0
+					z-index: 1
+					display: block
+					width: 48%
+					height: 100%
+					padding: 0
+				&.row
+					display: flex
+				color: #333
+			.switch-toggle.switch-candy
+				background-color: #2d3035
+				border-radius: 3px
+				// box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.2)
+			.switch-light.switch-candy
+				> span
+					background-color: inherit
+					width: 260px
+					height: 50px
+					border-radius: 35px
+					border: 1px solid #ccc
+
+				span span, input:checked ~ span span:first-child
+					color: #fff
+					font-weight: bold
+					text-align: center
+			.switch-candy label
+				// color: #fff
+				font-weight: bold
+				text-align: center
+			.switch-light.switch-candy input
+				~ span span:first-child, &:checked ~ span span:nth-child(2)
+					color: #333
+			.switch-candy
+				input:checked + label
+					color: #333
+				a
+					border-radius: 50px
+					height: 42px
+					background-color: #ffffff
+					margin: 3px 
+					box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.1)
+	.left-board .btn-plan
+		margin-top: 38px !important
+	.left-board, .right-board
+		position: relative
+		top: 0
+		transition: .5s
+		display: inline-block
+		float: left
+		padding-top: 40px
+		width: 50%
+		height: 510px
+		background-color: #e9e9eb
+		border-radius: 10px
+		h3
+			padding-bottom: 15px
+		h3
+			padding-bottom: 30px
+		.fa-check
+			color: red
+			padding-right: 10px
+			padding-bottom: 25px
+		span
+			width: 60px
+			height: 30px
+			border-radius: 15px
+			border: 1px solid #d4d4d5
+			margin-bottom: 55px 
+		.btn-plan , .btn-plan:hover , .btn-plan:active
+			background-color: transparent
+			border: 1px solid #267df4
+			color: #267df4
+		.btn-plan
+			width: 200px
+		.btn-plan:hover
+			color: lighten(#267df4,20%) // ! ! ! ! ! 
+		.btn-plan:active
+			color: lighten(#267df4,30%) // ! ! ! ! ! 
+		.btn-plan
+			width: 210px
+			margin-top: 20px
+			margin-bottom: 0
+		.btn-plan:active
+			margin-top: 22px
+			margin-bottom: 2px
+
+	
+	.active
+		box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.1)
+		top: -20px
+		padding-top: 20px
+		background-color: #ffffff
+		height: 550px
+		padding: 60px 0 0 0
+		.btn-plan , .btn-plan:hover
+			background-color: #267df4
+			color: white
+
+
+.Subscribe
+	h2
+	.Subscribe-form
+		margin: 40px auto 22px
+		width: 560px
+		input
+			width: 378px
+	span
+		color: #8c8f94
+		margin-bottom: 85px
+		position: relative
+
+
+footer
+	.foot-cont
+		position: relative
+		margin: -42px 0 130px
+		.foot-logo-np
+			margin-bottom: 35px
+		p
+			margin-bottom: 25px
+		.foot-left-img
+			width: 140px
+			height: 40px
+			margin-bottom: 36px
+		.socials>li 
+			display: inline-block
+			a 
+				color: #8c8f94
+				margin-right: 20px
+			a:hover
+				color: #222222
+		.footer-menu
+			h5 
+				margin-bottom: 15px
+			li 
+				margin-bottom: 6px
+	.foot-cont:after
+		top: -90px
+	.foot-copyright
+		// top: 87px
+		margin-top: 155px
+		margin-bottom: 35px
+		position: relative
+		.text-right
+			span
+				color: #222222
+				font-size: 12px
+			img
+				width: 110px
+				height: 35px
+
+	.foot-copyright:before
+		bottom: 68px

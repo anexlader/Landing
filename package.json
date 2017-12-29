@@ -1,0 +1,35 @@
+
+ {
+  "name": "myprojectBlaBlaBla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lexx",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+
+    "bootstrap": "^4.0.0-beta.2",
+    
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-js": "^0.1.0",
+    "gulp-file-include": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^3.0.0",
+    
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-cache": "^0.4.6",
+    "del": "^3.0.0",
+    "imagemin-pngquant": "^5.0.1"
+  }
+}
