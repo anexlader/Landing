@@ -29,7 +29,7 @@ p , a
 	font-size: 19px
 	text-align: left
 	color: #8c8f94
-	margin-bottom: 50px
+	// margin-bottom: 50px
 span
 	font-size: 16px
 	font-family: Lato-Regular
@@ -125,6 +125,24 @@ button
 		font-size: 14px
 	i
 		padding-left: 20px
+////////////////////////
+.header-btn
+	padding: 0 0 4px
+	margin: 0
+	color: #ffffff
+	width: 135px
+	background-color: #267df4
+	color: #ffff
+	i 
+		margin-right: 20px
+.header-btn:hover
+	background-color: #299fff
+	color: #fff999
+.header-btn:active
+	width: 131px
+	margin: 2px 0 2px 4px
+	color: #ff9988
+	/////////////////////////////
 .foot-cont:after , .foot-copyright:before
 		content: " "
 		position: absolute
@@ -140,191 +158,15 @@ button
 			color: blue
 			text-decoration: underline
 
-.fa-chevron-left,
+.fa-chevron-right,
 .fa-chevron-left
-	padding: 10px
+	// padding: 60px
+	cursor: pointer
 .ov-hidden
 	overflow: hidden
 
 /////////////////////////////////////
 
-@media (min-width: 576px) // col-sm
-	.container
-		max-width: 540px
-	header
-	.Features
-	.iphoneFtr
-		padding-top: 50px
-		h2,p,button
-			text-align: center
-	.MapFtr
-	.iPhoneScr
-	.Ready
-	.Customers
-	
-	.Subscribe
-	footer
-
-	
-	
-@media (min-width: 768px) // col-md
-	.container
-		max-width: 720px
-	header
-	.Features
-	.iphoneFtr
-		
-		h2,p,button
-			text-align: left
-	.MapFtr
-	.iPhoneScr
-	.Ready
-	.Customers
-
-	.Plan
-	.Subscribe
-	footer
-
-@media (max-width: 768px) // col-md
-	.container
-		max-width: 720px
-	.Subscribe .Subscribe-form
-		max-width: 90%
-		input
-			max-width: 55%
-	header
-		.header-menu
-			#navbarNav
-				ul.menu-1.navbar-nav > li > a
-					.menu-1 li,.menu-2 li
-						margin-bottom: 0px !important
-						margin-right: 30px
-
-					.menu-2 .active>a
-						color: #b5b5b6
-					.menu-2 
-						ul 
-							width: 100%
-						.h-btn
-							margin-right: 0
-							.header-btn
-								padding: 0 0 4px
-								margin: 0
-								color: #ffffff
-								width: 135px
-								background-color: #267df4
-								color: #ffff
-								i 
-									margin-right: 20px
-							.header-btn:hover
-								background-color: #299fff
-								color: #fff999
-							.header-btn:active
-								width: 131px
-								margin: 2px 0 2px 4px
-								color: #ff9988
-		.navbar-toggler
-			margin-top: -50px	
-
-	.Customers
-		#radio1:checked ~ .wr-txt
-			transform: translate(30%, 0) !important
-		#radio2:checked ~ .wr-txt
-			transform: translate(-4%, 0) !important
-		#radio3:checked ~ .wr-txt
-			transform: translate(-37%, 0) !important
-
-			
-
-
-@media (min-width: 992px) // col-lg
-	.container
-		max-width: 960px
-	header
-	.Features
-	.iphoneFtr
-	.MapFtr
-	.iPhoneScr
-	.Ready
-	.Customers
-	.Plan
-	.Subscribe
-	footer
-
-
-@media (max-width: 992px) // col-lg
-	.container
-		max-width: 960px
-	.Features
-	.iphoneFtr
-	.MapFtr
-	.iPhoneScr
-	.Ready
-	.Customers
-	.Plan
-		padding: 110px 0 140px 0 !important
-		h2 
-			margin: 0px auto 34px  !important
-			font-size: 32px
-			text-align: center
-		span
-			text-align: center
-		.toggle-demo
-			margin: 31px auto 0px
-			justify-content: center
-			span
-				margin-bottom: -20px
-				span
-					margin: 0px
-		p 
-			text-align: center
-			margin-bottom: 10px
-		span
-			margin: 20px auto 50px
-			a 
-		.left-board .btn-plan
-			margin-top: 38px !important
-
-		#left-board, #right-board
-			height: 420px
-			width: 50%
-		#left-board.active,	#right-board.active
-			height: 460px
-			padding: 70px 0 30px !important
-		.left-board, .right-board
-			padding: 50px 0 20px !important
-			h3
-				padding-bottom: 15px !important
-			span
-				margin: 10px auto 20px !important
-			p 
-				margin-bottom: 15px !important
-				font-size: 16px
-			li 
-				margin-bottom: -15px
-				font-size: 14px
-			.btn-plan
-				max-width: 90% !important
-				margin-top: 30px !important
-	.Subscribe
-	footer		
-
-@media (min-width: 1200px) // col-xl
-	.container
-		max-width: 1140px
-	header
-	.Features
-	.iphoneFtr
-	.MapFtr
-	.iPhoneScr
-	.Ready
-	.Customers
-	.Plan
-	.Subscribe
-	footer
-		
-
-/////////////////////////////////////
 
 
 header
@@ -342,17 +184,17 @@ header
 		.head-ul-row 
 			.logo-header
 				margin: 0
-				padding-bottom: 52px
+				// padding-bottom: 52px
 			.head-ul-row
 				.menu-1 , .menu-2
-					// margin: 2% 0
 					li
 						padding-top: 68px
 						a
 							
-				.menu-1 li,.menu-2 li
+				.menu-1>nav-item
 					margin-right: 30px
-
+				.menu-2>nav-item
+					margin-left: 30px
 				.menu-2 .active>a
 					color: #b5b5b6
 				.menu-2 
@@ -360,22 +202,7 @@ header
 						width: 100%
 					.h-btn
 						margin-right: 0
-						.header-btn
-							padding: 0 0 4px
-							margin: 0
-							color: #ffffff
-							width: 135px
-							background-color: #267df4
-							color: #ffff
-							i 
-								margin-right: 20px
-						.header-btn:hover
-							background-color: #299fff
-							color: #fff999
-						.header-btn:active
-							width: 131px
-							margin: 2px 0 2px 4px
-							color: #ff9988
+						
 
 
 	.h-text
@@ -444,6 +271,7 @@ header
 			color: #26272d
 			border: 1px solid #ebecef
 			margin-left: 7px
+			padding-left: 30px
 		.i-buttton-2:hover
 			background-color: #effe
 			color: #999999
@@ -454,12 +282,10 @@ header
 		
 .MapFtr
 	overflow: hidden
-
 	h2
 		margin-bottom: 50px
 	p 
 		margin-bottom: 25px
-		// font-stretch: condensed
 	.partners
 		h5
 			margin-top: 60px
@@ -562,11 +388,13 @@ header
 	padding-top: 135px
 	.wr-slides
 		width: 100%
+
 		label
 			padding: 0
 			position: relative
 			display: inline-block
 			height: 150px	
+			cursor: pointer
 			img
 				width: 90px
 				height: 90px
@@ -581,6 +409,7 @@ header
 	#radio2:checked ~ .wr-txt .tab2,
 	#radio3:checked ~ .wr-txt .tab3
 		display: block
+
 		transform: translate(0px, 0%)
 	#radio1:checked ~ .wr-slides label:nth-child(1) img,
 	#radio2:checked ~ .wr-slides label:nth-child(2) img,
@@ -626,13 +455,11 @@ header
 		left: -20%
 		top: 50px
 		z-index: 99999
-
 	.right-arrow
 		position: absolute
 		right: -20%
 		top: 50px
 		z-index: 99999
-
 	input
 		display: none
 	.tab1, .tab2, .tab3
@@ -832,6 +659,8 @@ header
 		width: 560px
 		input
 			width: 378px
+
+
 	span
 		color: #8c8f94
 		margin-bottom: 85px
@@ -879,3 +708,212 @@ footer
 
 	.foot-copyright:before
 		bottom: 68px
+@media (min-width: 576px) // col-sm
+	.container
+		max-width: 540px
+	header
+	.Features
+	.iphoneFtr
+		padding-top: 50px
+		h2,p,button
+			text-align: center
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+	
+	.Subscribe
+	footer
+
+	
+	
+@media (min-width: 768px) // col-md
+	.container
+		max-width: 720px
+	header
+	.Features
+	.iphoneFtr
+		
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+
+	.Plan
+	.Subscribe
+	footer
+
+@media (max-width: 768px) // col-md
+	.container
+		max-width: 720px
+
+	.Subscribe .Subscribe-form
+		max-width: 90%
+		input
+			max-width: 55%
+	header
+		.header-menu
+			.head-ul-row
+				.menu-1
+					padding: 20px 0 0 0
+				.menu-1,.menu-2
+					width: 25%
+					// background-color: #f4f4f4
+
+					li a
+						margin-bottom: 0px !important
+						margin-right: 30px
+						// text-align: center
+						width: 130px
+
+				.menu-2 .active>a
+					color: #b5b5b6
+				.menu-2 
+					padding: 0 0 20px 0
+					
+		.navbar-toggler
+			// margin-top: -50px	
+	.Features
+		padding: 45px 15px
+		span
+			margin: 45px auto 0
+		h4,p
+			text-align: center
+		p 
+			margin: 20px auto 20px
+	.iphoneFtr
+		margin: -90px 0
+		padding: 26px 0
+		h2
+			margin-bottom: 30px !important
+		h2,p
+			text-align: center
+		p 
+			margin-bottom: 30px
+		.i-buttton-ftr
+			justify-content: space-around
+			.i-buttton-1
+
+			.i-buttton-2
+	.MapFtr
+		padding-bottom: 100px
+		h5
+			text-align: center
+		.logo
+			width: 100% !important
+			height: 100% !important
+			margin-bottom: 15px
+			
+	.Customers
+		#radio1:checked ~ .wr-txt
+			transform: translate(30%, 0) !important
+		#radio2:checked ~ .wr-txt
+			transform: translate(-4%, 0) !important
+		#radio3:checked ~ .wr-txt
+			transform: translate(-37%, 0) !important
+	footer
+		.foot-cont
+			justify-content: space-between
+			margin-bottom: 65px
+			.f-menu-1th
+				p ,.socials
+					text-align: center
+				.foot-left-img ,.socials
+					margin-bottom: 20px
+			.footer-menu
+				text-align: center
+		.foot-copyright
+			margin-top: 21px
+			
+
+
+@media (min-width: 992px) // col-lg
+	.container
+		max-width: 960px
+	header
+	.Features
+	.iphoneFtr
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+	.Plan
+	.Subscribe
+	footer
+
+
+@media (max-width: 992px) // col-lg
+	.container
+		max-width: 960px
+	.Features
+	.iphoneFtr
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+	.Plan
+		padding: 110px 0 140px 0 !important
+		h2 
+			margin: 0px auto 34px  !important
+			font-size: 32px
+			text-align: center
+		span
+			text-align: center
+		.toggle-demo
+			margin: 31px auto 0px
+			justify-content: center
+			span
+				margin-bottom: -20px
+				span
+					margin: 0px
+		p 
+			text-align: center
+			margin-bottom: 10px
+		span
+			margin: 20px auto 50px
+			a 
+		.left-board .btn-plan
+			margin-top: 38px !important
+
+		#left-board, #right-board
+			height: 420px
+			width: 50%
+		#left-board.active,	#right-board.active
+			height: 460px
+			padding: 70px 0 30px !important
+		.left-board, .right-board
+			padding: 50px 0 20px !important
+			h3
+				padding-bottom: 15px !important
+			span
+				margin: 10px auto 20px !important
+			p 
+				margin-bottom: 15px !important
+				font-size: 16px
+			li 
+				margin-bottom: -15px
+				font-size: 14px
+			.btn-plan
+				max-width: 90% !important
+				margin-top: 30px !important
+	.Subscribe
+		button
+			float: right
+	footer		
+
+@media (min-width: 1200px) // col-xl
+	.container
+		max-width: 1140px
+	header
+	.Features
+	.iphoneFtr
+	.MapFtr
+	.iPhoneScr
+	.Ready
+	.Customers
+	.Plan
+	.Subscribe
+	footer
+		
+
+/////////////////////////////////////
